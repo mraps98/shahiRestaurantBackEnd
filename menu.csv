@@ -1,0 +1,43 @@
+Name, Category, Price, SpiceLevel, IsVegetarian
+Plain Roti, 0, 0.99, 0, 1
+Butter Roti, 0, 1.99, 0, 1
+Plain Naan, 0, 3.99, 0, 1
+Butter Naan, 0, 4.99, 0, 1
+Garlic Naan, 0, 5.99, 0, 1
+Vegetable Samosa, 1, 4.99, 4, 1
+Chicken Samosa, 1, 5.99, 4, 0 
+Pani Puri, 1, 7.99, 4, 1
+Bhel Puri, 1, 7.99, 4, 1
+Vada Pav, 1, 7.99, 4, 1
+Vegetable Biryani, 2, 10.99, 6, 1
+Chicken Biryani, 2, 12.99, 6, 0
+Palak Paneer, 2, 9.99, 6, 1
+Shahi Paneer, 2, 9.99, 6, 1
+Mattar Paneer, 2, 9.99, 6, 1
+Paneer Bhurji, 2, 9.99, 5, 1
+Egg Bhurji, 2, 9.99, 5, 0
+Navratna Korma, 2, 9.99, 6, 1
+Butter Chicken, 2, 11.99, 7, 0
+Chicken Do Pyaza, 2, 11.99, 7, 0
+Dal Tadka, 2, 7.99, 4, 1
+Dal Moong, 2, 7.99, 4, 1
+Dal Makhani, 2, 8.99, 4, 1
+Pav Bhaji, 2, 9.99, 5, 1
+Aloo Gobhi, 2, 7.99, 4, 1
+Aloo Bainghan, 2, 7.99, 4, 1
+Bhindi Fey, 2, 7.99, 5, 1
+Masala Dosa, 2, 9.99, 4, 1
+Onion Uttapam, 2, 9.99, 4, 1
+Idli Sambhar, 2, 8.99, 4, 1
+Fish Curry, 2, 9.99, 6, 0
+Dhahi Bhalla, 3, 6.99, 0, 1
+Gulab Jamun, 3, 6.99, 0, 1
+Rasmalai, 3, 6.99, 0, 1
+Rasgulla, 3, 6.99, 0, 1
+Sewaiyan, 3, 7.99, 0, 1
+Plain Chai, 4, 3.99, 0, 1
+Masala Chai, 4, 4.99, 4, 1
+Cardamom Chai, 4, 4.99, 0, 1
+Sweet Lassi, 4, 5.99, 0, 1
+Salty Lassi, 4, 5.99, 0, 1
+Coffee, 4, 3.99, 0, 1 
