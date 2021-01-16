@@ -35,6 +35,10 @@ namespace shahiRestaurant
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "shahiRestaurant", Version = "v1" });
             });
 		services.AddDbContext<RestaurantContext>(options=>options.UseSqlite("Data Source= shahi.db"));
+
+		services.AddCors(options=> options.AddDefaultPolicy(
+			builder=> builder.AllowAnyOrigin()
+		));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,10 +51,11 @@ namespace shahiRestaurant
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "shahiRestaurant v1"));
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
+	    app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
