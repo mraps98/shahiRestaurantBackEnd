@@ -27,6 +27,12 @@ namespace shahiRestaurant.Controllers{
 			return _context.FoodItems.Where(item=> item.Id==Id).FirstOrDefault();
 		}
 
+		[HttpGet]
+		[Route("category/{category}")]
+		public IEnumerable<FoodItem> GetFoodItemByCategory(FoodItemCategory category){
+			return _context.FoodItems.Where(item=> item.Category == category);
+		}
+
 		[HttpPost]
 		public async void CreateFoodItem(FoodItem item){
 			_context.FoodItems.Add(item);
