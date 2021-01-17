@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System;
 using System.Threading.Tasks;
 using shahiRestaurant.Data;
 using shahiRestaurant.Models;
@@ -31,6 +32,12 @@ namespace shahiRestaurant.Controllers{
 		[Route("category/{category}")]
 		public IEnumerable<FoodItem> GetFoodItemByCategory(FoodItemCategory category){
 			return _context.FoodItems.Where(item=> item.Category == category);
+		}
+
+		[HttpGet]
+		[Route("categories")]
+		public IEnumerable<String> GetCategories(){
+			return Enum.GetNames(typeof(FoodItemCategory));
 		}
 
 		[HttpPost]
