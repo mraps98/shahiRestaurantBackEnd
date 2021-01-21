@@ -25,7 +25,7 @@ insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Pav Bhaji", 2, 9.99, 5, 1);
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Aloo Gobhi", 2, 7.99, 4, 1);
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Aloo Bainghan", 2, 7.99, 4, 1);
-insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Bhindi Fey", 2, 7.99, 5, 1);
+insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Bhindi Fry", 2, 7.99, 5, 1);
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Masala Dosa", 2, 9.99, 4, 1);
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Onion Uttapam", 2, 9.99, 4, 1);
 insert into FoodItems (Name, Category, Price, SpiceLevel, IsVegetarian) values("Idli Sambhar", 2, 8.99, 4, 1);
