@@ -19,6 +19,9 @@ with open("resetDatabase.sql", "w") as f:
 			count = count + 1
 		f.write(");")
 		f.write("\n")
-	#	line = line.strip("\n")
-	#	print(line)
-	#	f.write("insert into FoodItems values(" + line + ");\n")	
+	f.write("delete from Categories;\n")
+	f.write('insert into Categories values(0, "Bread");\n');
+	f.write('insert into Categories values(1, "Appetizer");\n');
+	f.write('insert into Categories values(2, "Main Course");\n');
+	f.write('insert into Categories values(3, "Desert");\n');
+	f.write('insert into Categories values(4, "Beverage");\n');

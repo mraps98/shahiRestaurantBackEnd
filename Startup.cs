@@ -37,7 +37,7 @@ namespace shahiRestaurant
 		services.AddDbContext<RestaurantContext>(options=>options.UseSqlite("Data Source= shahi.db"));
 
 		services.AddCors(options=> options.AddDefaultPolicy(
-			builder=> builder.AllowAnyOrigin()
+			builder=> builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()
 		));
         }
 

@@ -7,5 +7,6 @@ namespace shahiRestaurant.Data{
 		}
 		
 		public DbSet<FoodItem> FoodItems{get;set;}
+		public DbSet<Category> Categories{get; set;}
 	}
 }

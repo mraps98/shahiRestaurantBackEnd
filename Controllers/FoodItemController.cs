@@ -29,15 +29,10 @@ namespace shahiRestaurant.Controllers{
 		}
 
 		[HttpGet]
-		[Route("category/{category}")]
-		public IEnumerable<FoodItem> GetFoodItemByCategory(FoodItemCategory category){
-			return _context.FoodItems.Where(item=> item.Category == category);
-		}
-
-		[HttpGet]
-		[Route("categories")]
-		public IEnumerable<String> GetCategories(){
-			return Enum.GetNames(typeof(FoodItemCategory));
+		[Route("category/{categoryid}")]
+		public IEnumerable<FoodItem> GetFoodItemsByCategory(int categoryid){
+			// Areturn _context.FoodItems.Where(item=> item.CategoryId == categoryid);
+			return _context.FoodItems.Where(FoodItem => FoodItem.CategoryId == categoryid);
 		}
 
 		[HttpPost]
