@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using shahiRestaurant.Data;
+using System.IO;
 
 namespace shahiRestaurant
 {
@@ -34,7 +35,9 @@ namespace shahiRestaurant
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "shahiRestaurant", Version = "v1" });
             });
-		services.AddDbContext<RestaurantContext>(options=>options.UseSqlite("Data Source= shahi.db"));
+
+		var currentDirectory = Directory.GetCurrentDirectory();
+		services.AddDbContext<RestaurantContext>(options=>options.UseSqlite($"Data Source={currentDirectory}/shahi.db"));
 
 		services.AddCors(options=> options.AddDefaultPolicy(
 			builder=> builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()
